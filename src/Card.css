@@ -1,0 +1,29 @@
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.card button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
