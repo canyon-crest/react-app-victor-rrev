@@ -13,20 +13,21 @@ function App() {
     
       <div>
           <Nav />
-        <h1>My React App</h1>
+          
+          <h1>My React App</h1>
 
-      <Message 
-        text="Welcome to my React website!"
-        name="Victor"
-      />
+          <Message 
+            text="Welcome to my React website!"
+            name="Victor"
+          />
       
-        <Card name="Product 1" description="This is the first product." />
-        <Card name="Product 2" description="This is the second product." />
-        <Card name="Product 3" description="This is the third product." />
-        <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+          <Card name="Product 1" description="This is the first product." />
+          <Card name="Product 2" description="This is the second product." />
+          <Card name="Product 3" description="This is the third product." />
+          <div className="card">
+          <button onClick={() => setCount((count) => count + 1)}>
+            count is {count}
+          </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
