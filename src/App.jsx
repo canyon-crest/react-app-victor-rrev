@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import Nav from './nav'
-import Card from './card'
+import Nav from './Nav'
+import Card from './Card'
 
 import React from "react";
 import Message from "./message";
