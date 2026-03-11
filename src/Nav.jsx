@@ -1,6 +1,6 @@
 import './nav.css';
 
-function Nav() {
+function Nav({ setPage }) {
   return (
     <nav className="nav">
       <h1 className="logo">rev's react app</h1>
