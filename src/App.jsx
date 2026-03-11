@@ -2,17 +2,25 @@ import { useState } from 'react'
 import './App.css'
 import Nav from './nav'
 import Card from './card'
+import Home from './Home'
+import About from './About'
+import Contact from './Contact'
 
 import Message from "./message";
 
 function App() {
   const [count, setCount] = useState(0)
+  const [page, setPage] = useState('home')
 
   return (
     
       <div>
           
-          <Nav />
+          <Nav setPage={setPage} />
+
+          {page === 'home' && <Home />}
+          {page === 'about' && <About />}
+          {page === 'contact' && <Contact />}
 
           <h1>My React App</h1>
 
