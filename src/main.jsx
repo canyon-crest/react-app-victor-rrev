@@ -6,6 +6,7 @@ import Card from './card.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Nav />
     <App />
     <Card name="I don't matter" description="I am a placeholder" />
   </StrictMode>,
