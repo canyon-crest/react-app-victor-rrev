@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Card.css'
+import './card.css'
 
 function Card({name, description}) {
 
@@ -16,4 +16,4 @@ function Card({name, description}) {
     )
 }
 
-export default Card;
+export default Card
