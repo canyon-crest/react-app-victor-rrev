@@ -2,8 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Nav from './Nav';
-import Card from './Card';
+import Nav from './Nav'
+import Card from './Card'
 
 import React from "react";
 import Message from "./message";
@@ -12,9 +12,9 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    
       <div>
-
+          <Nav />
         <h1>My React App</h1>
 
       <Message 
@@ -22,15 +22,10 @@ function App() {
         name="Victor"
       />
       
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
+        <Card name="Product 1" description="This is the first product." />
+        <Card name="Product 2" description="This is the second product." />
+        <Card name="Product 3" description="This is the third product." />
+        <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
@@ -39,9 +34,9 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Thank you for visiting my React website. have a good day Mr. Hare
       </p>
-    </>
+    </div>
   )
 }
 
