@@ -9,11 +9,11 @@ function Nav() {
       <button onClick={() => setPage("about")}>About</button>
       <button onClick={() => setPage("contact")}>Contact</button>
 
-      <div className="nav-links">
+      {/*<div className="nav-links">
         <a href="/home">Home</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
-      </div>
+      </div>*/}
     </nav>
   );
 }
