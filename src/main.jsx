@@ -2,15 +2,11 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import Nav from './nav'
-import Card from './card'
+import Card from '.card.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Nav />
-    <Card name ="Product 1" description="This is the first product." />
-    <Card name ="Product 2" description="This is the second product." />
-    <Card name ="Product 3" description="This is the third product." />
     <App />
+    <Card name="I don't matter" description="I am a placeholder" />
   </StrictMode>,
 )

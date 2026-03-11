@@ -3,7 +3,7 @@ import Card from "./card";
 function Message(props) {
   return (
     <div>
-      <Card name="Message Card" description="Hello, {props.name}, from, Rev" />
+      <Card name="Message Card" description={`Hello, ${props.name}, from, Rev`} />
       {/*<h2>Message:</h2>
       <p>Hello, {props.name}</p>
 
