@@ -1,13 +1,14 @@
-import React from "react";
+import Card from "./card";
 
 function Message(props) {
   return (
     <div>
-      <h2>Message:</h2>
+      <Card name="Message Card" description="Hello, {props.name}, from, Rev" />
+      {/*<h2>Message:</h2>
       <p>Hello, {props.name}</p>
 
       <h3>From:</h3>
-      <p>{props.name}</p>
+      <p>rev</p>*/}
     </div>
   );
 }
