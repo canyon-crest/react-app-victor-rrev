@@ -13,7 +13,7 @@ function Nav({ setPage }) {
       {/* </ul> */}
     
 
-      <h1 className="logo">rev's react app</h1>
+      /*<h1 className="logo">rev's react app</h1>*/
 
       <button onClick={() => setPage("home")}>Home</button>
       <button onClick={() => setPage("about")}>About</button>
