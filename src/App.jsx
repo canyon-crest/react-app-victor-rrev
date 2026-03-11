@@ -29,9 +29,9 @@ function App() {
             name="Mr. Hare"
           />
       
-          <Card name="Product 1" description="This is the first product." />
-          <Card name="Product 2" description="This is the second product." />
-          <Card name="Product 3" description="This is the third product." />
+          <Card name="Life Insurance" description="Insurance for your Life" />
+          <Card name="Home/Boat/Auto Insurance" description="Insurance for your valuables" />
+          <Card name="Geico" description="Geico" />
           <div className="card">
           <button onClick={() => setCount((count) => count + 1)}>
             count is {count}
