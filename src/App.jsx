@@ -3,7 +3,6 @@ import './App.css'
 import Nav from './nav'
 import Card from './card'
 
-import React from "react";
 import Message from "./message";
 
 function App() {
@@ -13,7 +12,8 @@ function App() {
     
       <div>
           
-          
+          <Nav />
+
           <h1>My React App</h1>
 
           <Message 
