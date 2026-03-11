@@ -12,13 +12,13 @@ function App() {
   return (
     
       <div>
-          <Nav />
+          
           
           <h1>My React App</h1>
 
           <Message 
             text="Welcome to my React website!"
-            name="Victor"
+            name="Mr. Hare"
           />
       
           <Card name="Product 1" description="This is the first product." />
