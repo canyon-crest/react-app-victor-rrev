@@ -57,7 +57,7 @@ function App() {
             <>
               <Home />
               
-              // firebase stuff
+              {/* firebase stuff */}
               <h2>Customer Feedback</h2>
               <p>please be truthful in your feedback. it helps us a lot</p>
               
@@ -85,10 +85,11 @@ function App() {
             text="Welcome to my React website!"
             name="Mr. Hare"
           />
-      
-          <Card name="Life Insurance" description="Insurance for your Life" />
-          <Card name="Home/Boat/Auto Insurance" description="Insurance for your valuables" />
-          <Card name="Geico" description="Geico" />
+          <div className="card-container">
+            <Card name="Life Insurance" description="Insurance for your Life" />
+            <Card name="Home/Boat/Auto Insurance" description="Insurance for your valuables" />
+            <Card name="Geico" description="Geico" />
+          </div>
           <div className="card counter'box">
           <button onClick={() => setCount((count) => count + 1)}>
             count is {count}

@@ -2,26 +2,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #65a0d7;
-  padding: 12px 20px;
+  background: linear-gradient(90deg, #4f56d6, #6c63ff);
+  padding: 14px 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
 .logo {
   color: white;
   margin: 0;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .nav-btn {
-  color: rgb(239, 27, 27);
+  color: white;
   text-decoration: none;
-  margin-left: 15px;
+  margin-left: 18px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
 }
 
 .nav-btn:hover {
-  color: rgb(23, 56, 155);
-  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
