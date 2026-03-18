@@ -1,42 +1,86 @@
+/* Page layout */
 #root {
-  max-width: 1280px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Input + button row */
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
 }
 
+/* Input */
+input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #646cff;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #4f56d6;
+}
+
+/* Firestore list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f5f5f5;
+  margin: 8px auto;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+/* Cards section */
 .card {
-  padding: 2em;
+  background: white;
+  padding: 1.5em;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  max-width: 400px;
 }
 
+/* Counter box */
+.counter-box {
+  margin-top: 2rem;
+}
+
+/* Footer text */
 .read-the-docs {
-  color: #888;
+  color: #777;
+  margin-top: 2rem;
 }
