@@ -1,4 +1,13 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { db } from './firebase'
+
+import {
+  collection,
+  addDoc,
+  getDocs,
+  Timestamp
+} from "firebase/firestore";
+
 import './App.css'
 import Nav from './nav'
 import Card from './card'
@@ -12,11 +21,38 @@ function App() {
   const [count, setCount] = useState(0)
   const [page, setPage] = useState('home')
 
+  const [text, setText] =useState('');
+  const [items, setItems] =useState([]);
+
+  const itemsCollection = collection(db, 'items');
+
+  const getItems = async () => {
+    const data = await getDocs(itemsCollection);
+    setItems(data.docs.map((doc) => ({...doc.data(), id: doc.id})));
+  }
+
+  const addItem = async () => {
+    if (!text) return;
+    await addDoc(itemsCollection, {
+      text: text,
+      createdAt: Timestamp.now()
+    });
+    setText('');
+    getItems();
+  };
+
+
+  useEffect(() => {
+    getItems();
+  }, []);
+
   return (
     
       <div>
           
           <Nav setPage={setPage} />
+
+          
 
           {page === 'home' && <Home />}
           {page === 'about' && <About />}
