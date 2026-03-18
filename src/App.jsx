@@ -52,11 +52,26 @@ function App() {
           
           <Nav setPage={setPage} />
 
-          
+          {page === 'home' && (
+            <>
+              <Home />
+              
+              <h2>Firestore Items</h2>
+              <input value={text}onChange={(e) => setText(e.target.value)} />
 
-          {page === 'home' && <Home />}
+              <button onClick={addItem}>Add Item</button>
+          
+              <ul>
+               {items.map((item) => (
+                 <li key={item.id}>{item.text}</li>
+               ))}
+              </ul>
+            </>
+          )}
           {page === 'about' && <About />}
           {page === 'contact' && <Contact />}
+
+          
 
           <h1>My React App</h1>
 
