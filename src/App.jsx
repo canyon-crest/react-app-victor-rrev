@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { db } from './firebase'
+import { serverTimestamp } from "firebase/firestore";
 
 import {
   collection,
@@ -35,7 +36,7 @@ function App() {
     if (!text) return;
     await addDoc(itemsCollection, {
       text: text,
-      createdAt: Timestamp.now()
+      createdAt: serverTimestamp()
     });
     setText('');
     getItems();
@@ -64,7 +65,7 @@ function App() {
               <ul>
                {items.map((item) => (
                  <li key={item.id}>{item.text}</li>
-               ))}
+                ))}
               </ul>
             </>
           )}
