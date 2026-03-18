@@ -6,7 +6,9 @@ import {
   collection,
   addDoc,
   getDocs,
-  Timestamp
+  Timestamp,
+  deleteDoc,
+  doc
 } from "firebase/firestore";
 
 import './App.css'
@@ -19,9 +21,12 @@ import Contact from './Contact'
 import Message from "./message";
 
 function App() {
+
+  {/*buttons*/}
   const [count, setCount] = useState(0)
   const [page, setPage] = useState('home')
 
+  {/*firestore*/}
   const [text, setText] =useState('');
   const [items, setItems] =useState([]);
 
@@ -47,6 +52,19 @@ function App() {
     getItems();
   }, []);
 
+  {/*delete items button*/}
+  const clearItems = async () => {
+    const data = await getDocs(itemsCollection);
+    
+    const deletePromises = data.docs.map((item) =>
+      deleteDoc(doc(db, 'items', item.id))
+    );
+
+    await Promise.all(deletePromises);
+
+    setItems([]);
+  };
+
   return (
     
       <div>
@@ -57,7 +75,7 @@ function App() {
             <>
               <Home />
               
-              {/* firebase stuff */}
+              {/* firestore stuff */}
               <h2>Customer Feedback</h2>
               <p>please be truthful in your feedback. it helps us a lot</p>
               
@@ -72,6 +90,11 @@ function App() {
                  <li key={item.id}>{item.text}</li>
                 ))}
               </ul>
+
+              <button onClick={clearItems} style={{ marginTop: "10px", backgroundColor: "#e74c3c" }}>
+                Clear all Items
+              </button>
+
             </>
           )}
           {page === 'about' && <About />}
