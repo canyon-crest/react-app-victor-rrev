@@ -1,10 +1,10 @@
-function Contact() {
+function About() {
   return (
     <div>
-      <h2>Contact Page</h2>
+      <h2>About Us</h2>
       <p>You can contact me at mr.hare's.hair@gmail.com.</p>
     </div>
   )
 }
 
-export default Contact
+export default About

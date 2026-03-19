@@ -17,7 +17,7 @@ function Nav({ setPage }) {
 
       <button className="nav-btn" onClick={() => setPage("home")}>Home</button>
       <button className="nav-btn" onClick={() => setPage("products")}>Products</button>
-      <button className="nav-btn" onClick={() => setPage("contact")}>Contact</button>
+      <button className="nav-btn" onClick={() => setPage("About")}>About</button>
 
     </nav>
     </div>

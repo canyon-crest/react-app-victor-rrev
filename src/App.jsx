@@ -16,7 +16,7 @@ import Nav from './nav'
 import Card from './card'
 import Home from './Home'
 import Products from './Products'
-import Contact from './Contact'
+import Contact from './About'
 import Footer from './Footer'
 
 import Message from "./message";
@@ -99,7 +99,7 @@ function App() {
             </>
           )}
           {page === 'Products' && <Products />}
-          {page === 'contact' && <Contact />}
+          {page === 'About' && <About />}
 
           
 
