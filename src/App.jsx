@@ -12,6 +12,7 @@ import {
 } from "firebase/firestore";
 
 import './App.css'
+import About from './About'
 import Nav from './nav'
 import Card from './card'
 import Home from './Home'
