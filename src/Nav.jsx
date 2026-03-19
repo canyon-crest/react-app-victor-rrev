@@ -16,7 +16,7 @@ function Nav({ setPage }) {
       <h1 className="logo">Reverdatto Marketplace</h1>
 
       <button className="nav-btn" onClick={() => setPage("home")}>Home</button>
-      <button className="nav-btn" onClick={() => setPage("products")}>Products</button>
+      <button className="nav-btn" onClick={() => setPage("Products")}>Products</button>
       <button className="nav-btn" onClick={() => setPage("About")}>About</button>
       <button className="nav-btn" onClick={() => setPage("GoogleLogin")}>Google Login</button>
 
