@@ -94,7 +94,7 @@ function App() {
               
               {/* firestore stuff */}
               <h2>Customer Feedback</h2>
-              <p>please be truthful in your feedback. it helps us a lot</p>
+              <p>Please be truthful in your feedback. It helps us a lot</p>
               
               <div className="input-group">
                 <input value={text}onChange={(e) => setText(e.target.value)} />
