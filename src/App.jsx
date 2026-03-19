@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react'
 import { db } from './firebase'
 import { serverTimestamp } from "firebase/firestore";
 
+import { auth } from './firebase.js';
+import { onAuthStateChanged } from 'firebase/auth';
+
 import {
   collection,
   addDoc,
@@ -25,6 +28,16 @@ import Footer from './Footer'
 import GoogleLogin from './GoogleLogin';
 
 function App() {
+
+  /*auth state*/
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+    return () => unsubscribe();
+  }, []);
 
   {/*buttons*/}
   const [count, setCount] = useState(0)
@@ -73,7 +86,7 @@ function App() {
     
       <div>
           
-          <Nav setPage={setPage} />
+          <Nav setPage={setPage} user={user}/>
 
           {page === 'home' && (
             <>
