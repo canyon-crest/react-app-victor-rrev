@@ -110,7 +110,7 @@ function App() {
             name="Mr. Hare"
           />
             
-     <Footer />     
+     {/*<Footer />*/}    
       
     </div>
   )
