@@ -20,7 +20,7 @@ import Products from './Products'
 import Contact from './About'
 import Footer from './Footer'
 
-import Message from "./message";
+/*import Message from "./message";*/
 
 import GoogleLogin from './GoogleLogin';
 
@@ -109,10 +109,10 @@ function App() {
 
           <h1>Reverdatto's Marketplace</h1>
 
-          <Message 
+          {/*<Message 
             text="Welcome to Reverdatto's Marketplace!"
             name="Mr. Hare"
-          />
+          />*/}
             
      {/*<Footer />*/}    
       

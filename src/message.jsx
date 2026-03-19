@@ -1,6 +1,7 @@
 import Card from "./card";
 
-function Message(props) {
+/*
+  function Message(props) {
   return (
     <div>
       
@@ -14,3 +15,4 @@ function Message(props) {
 }
 
 export default Message
+*/
