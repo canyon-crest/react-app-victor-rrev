@@ -107,7 +107,7 @@ function App() {
 
           
 
-          <h1>Reverdatto's Marketplace</h1>
+          <h1 className="logo-title">Reverdatto's Marketplace</h1>
 
           {/*<Message 
             text="Welcome to Reverdatto's Marketplace!"
