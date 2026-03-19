@@ -104,10 +104,10 @@ function App() {
 
           
 
-          <h1>My React App</h1>
+          <h1>Reverdatto's Marketplace</h1>
 
           <Message 
-            text="Welcome to my React website!"
+            text="Welcome to Reverdatto's Marketplace!"
             name="Mr. Hare"
           />
             
