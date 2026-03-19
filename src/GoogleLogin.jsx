@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { auth, provider } from '../firebase.js';
+import { auth, provider } from './firebase.js';
 import { signInWithPopup, signOut, onAuthStateChanged } from 'firebase/auth';
 
 function GoogleLogin() {
