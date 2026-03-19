@@ -126,12 +126,25 @@ p {
 }
 
 .logo-title {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 12px;
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 20px 0;
+
+  /* Gradient text */
   background: linear-gradient(90deg, #4f56d6, #6c63ff);
-  color: white;
-  font-size: 2.2rem;
-  font-weight: bold;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Slight glow */
+  text-shadow: 0 2px 8px rgba(108, 99, 255, 0.3);
+
+  /* Smooth hover effect */
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.logo-title:hover {
+  transform: scale(1.05);
+  text-shadow: 0 4px 14px rgba(108, 99, 255, 0.5);
 }
