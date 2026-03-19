@@ -96,7 +96,7 @@ function App() {
               </ul>
 
               <button onClick={clearItems} style={{ marginTop: "10px", backgroundColor: "#e74c3c" }}>
-                Clear all Items
+                Submit Feedback
               </button>
 
             </>
