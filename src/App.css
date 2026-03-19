@@ -115,3 +115,12 @@ footer {
   text-align: center;
   color: #777;
 }
+
+button {
+  margin-top: 10px;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 18px;
+}
