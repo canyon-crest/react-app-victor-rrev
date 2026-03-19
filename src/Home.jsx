@@ -18,7 +18,7 @@ function Home() {
     <div>
       <h2>Home Page</h2>
       
-      <p>this is the home, just as Ace is the place with the helpful hardware store</p>
+      <p>This is the home, just as Ace is the place with the helpful hardware store. Look here for some helpful advice</p>
 
       <button onClick={fetchAdvice}>Get Advice</button>
       {advice && <p>Advice: {advice}</p>}
