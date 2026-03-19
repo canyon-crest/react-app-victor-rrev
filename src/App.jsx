@@ -22,6 +22,8 @@ import Footer from './Footer'
 
 import Message from "./message";
 
+import GoogleLogin from './GoogleLogin';
+
 function App() {
 
   {/*buttons*/}
@@ -101,6 +103,7 @@ function App() {
           )}
           {page === 'Products' && <Products />}
           {page === 'About' && <About />}
+          {page === 'GoogleLogin' && <GoogleLogin />}
 
           
 
