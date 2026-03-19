@@ -13,7 +13,7 @@ function Nav({ setPage }) {
       {/* </ul> */}
     
 
-      <h1 className="logo">rev's react app</h1>
+      <h1 className="logo">Reverdatto Marketplace</h1>
 
       <button className="nav-btn" onClick={() => setPage("home")}>Home</button>
       <button className="nav-btn" onClick={() => setPage("products")}>Products</button>

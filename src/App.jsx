@@ -17,6 +17,7 @@ import Card from './card'
 import Home from './Home'
 import Products from './Products'
 import Contact from './Contact'
+import Footer from './Footer'
 
 import Message from "./message";
 
@@ -109,14 +110,8 @@ function App() {
             name="Mr. Hare"
           />
             
-          <div className="card">
-            <button onClick={() => setCount((count) => count + 1)}>
-             Count: {count}
-             </button>
-          </div>
-      <p className="read-the-docs">
-        Thank you for visiting my React website. have a good day Mr. Hare
-      </p>
+     <Footer />     
+      
     </div>
   )
 }
