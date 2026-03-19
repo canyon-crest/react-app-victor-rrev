@@ -15,7 +15,7 @@ import './App.css'
 import Nav from './nav'
 import Card from './card'
 import Home from './Home'
-import About from './About'
+import Products from './Products'
 import Contact from './Contact'
 
 import Message from "./message";
@@ -97,7 +97,7 @@ function App() {
 
             </>
           )}
-          {page === 'about' && <About />}
+          {page === 'Products' && <Products />}
           {page === 'contact' && <Contact />}
 
           
@@ -108,19 +108,12 @@ function App() {
             text="Welcome to my React website!"
             name="Mr. Hare"
           />
-          <div className="card-container">
-            <Card name="Life Insurance" description="Insurance for your Life" />
-            <Card name="Home/Boat/Auto Insurance" description="Insurance for your valuables" />
-            <Card name="Geico" description="Geico" />
+            
+          <div className="card">
+            <button onClick={() => setCount((count) => count + 1)}>
+             Count: {count}
+             </button>
           </div>
-          <div className="card counter'box">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-        <p>
-          click me
-        </p>
-      </div>
       <p className="read-the-docs">
         Thank you for visiting my React website. have a good day Mr. Hare
       </p>
